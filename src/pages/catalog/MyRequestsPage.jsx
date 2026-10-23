@@ -298,20 +298,7 @@ export default function MyRequestsPage() {
                         </button>
                       )}
 
-                      {s.estado === 'entregada' && (
-                        <Link
-                          to={
-                            '/student/prestamos/' +
-                            s.codigo +
-                            '/constancia'
-                          }
-                        >
-                          Ver constancia
-                        </Link>
-                      )}
-
-                      {s.estado !== 'enviada' &&
-                       s.estado !== 'entregada' && (
+                      {s.estado !== 'enviada' && (
                         <button
                           type="button"
                           className="btn-link"
