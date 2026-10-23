@@ -22,14 +22,7 @@ router.get('/manager/inventario/nuevo', soloManager, controller.home);
 router.get('/manager/inventario/:id', soloManager, controller.home);
 router.get('/manager/inventario/:id/editar', soloManager, controller.home);
 
-// HU-4 · Aprobación y entrega (4.1 – 4.6)
-router.get('/manager/solicitudes', soloManager, controller.home);
-router.get('/manager/solicitudes/:codigo/entrega', soloManager, controller.home);
-router.get('/manager/prestamos', soloManager, controller.home);
-router.get('/manager/prestamos/:codigo/constancia', soloManager, controller.home);
-router.get('/manager/vencidos', soloManager, controller.home);
-
 // Entrega 2: aquí se registran las APIs del encargado, también protegidas,
-// por ejemplo POST /api/v1/solicitudes/:codigo/entrega (HU-4).
+// por ejemplo POST /api/v1/equipos (HU-2).
 
 export default router;

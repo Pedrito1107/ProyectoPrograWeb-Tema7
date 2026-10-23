@@ -21,8 +21,6 @@ import CatalogPage from '../pages/catalog/CatalogPage'
 import EquipmentDetailPage from '../pages/catalog/EquipmentDetailPage'
 import RequestFormPage from '../pages/catalog/RequestFormPage'
 import MyRequestsPage from '../pages/catalog/MyRequestsPage'
-// HU-4 · Constancia (consultable por el estudiante)
-import DeliveryReceiptPage from '../pages/loans/DeliveryReceiptPage'
 
 
 function Shell() {
@@ -65,12 +63,6 @@ function App() {
         <Route path="/student/equipos/:id" element={<EquipmentDetailPage />} />
         <Route path="/student/solicitar/:id" element={<RequestFormPage />} />
         <Route path="/student/solicitudes" element={<MyRequestsPage />} />
-
-        {/* HU-4 · Constancia de entrega (vista del estudiante) */}
-        <Route
-          path="/student/prestamos/:codigo/constancia"
-          element={<DeliveryReceiptPage volver="/student/solicitudes" volverLabel="Mis solicitudes" soloPropias />}
-        />
 
         <Route
           path="*"
